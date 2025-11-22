@@ -153,7 +153,7 @@ body {
 
 /* Start Landing Section */
 .landing {
-  background-image: url(images/landing.JPEG);
+  background-image: url(/images/landing.JPEG);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
@@ -440,8 +440,12 @@ td {
   color: var(--main-color);
   text-decoration: none;
 }
-.est , .location , .tel , .fax {
+.est , .location {
   color: var(--golden-color);
+}
+.tel , .fax {
+  text-decoration: none;
+  color: var(--main-color);
 }
 .contact .info .social {
   display: flex;
