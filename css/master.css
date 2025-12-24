@@ -147,6 +147,7 @@ body {
 }
 .header .links ul li a:hover {
   padding-left: 25px;
+  font-weight: bold;
 }
 .header .links ul li:not(:last-child) a {
   border-bottom: 1px solid var(--secondary-color);
@@ -210,6 +211,7 @@ body {
 }
 .elite .elite-content .card {
   background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 .elite .elite-content .card img {
   max-width: 100%;
@@ -276,10 +278,14 @@ td {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
   margin-top: 100px;
+  
 }
 .trophies .trophies-content .tro {
   display: flex;
   margin-bottom: 40px;
+  padding: 25px;
+  background-color: var(--section-background);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 @media (max-width: 767px) {
   .trophies .trophies-content .tro {
@@ -361,10 +367,20 @@ td {
   background-color: var(--golden-color);
   margin: 8px auto 0;
 }
+.met-before {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--main-color);
+}
 .global .global-content .image img {
-  width: 260px;
+  width: 300px;
   border-radius: 10px;
-
+}
+.blur {
+  filter: blur(2px);
+}
+.blur:hover {
+  filter: blur(0);
 }
 @media (max-width: 1199px) {
   .image-column {
